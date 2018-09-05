@@ -1,21 +1,25 @@
-var x = document.getElementByID("form_sample")
+// Fetching HTML Elements in Variables by ID.
+var x = document.getElementById("form_sample");
 var createform = document.createElement('form'); // Create New Element Form
-createform.setAttribute("action",""); // Setting Action Attribute on Form
-createform.setAttribute("method", "post") //Setting Method Attribute
-x. appendChild(createform);
+createform.setAttribute("action", ""); // Setting Action Attribute on Form
+createform.setAttribute("method", "post"); // Setting Method Attribute on Form
+x.appendChild(createform);
 
-var heading = document.createElement('h2');
+var heading = document.createElement('h2'); // Heading of Form
 heading.innerHTML = "Contact Form ";
-createform.appendchild(heading);
+createform.appendChild(heading);
 
-var line = document.createElement ('hr')
-createform.appendChild(line)
+var line = document.createElement('hr'); // Giving Horizontal Row After Heading
+createform.appendChild(line);
 
-var linebreak = document.createElement('label')
-namelabel.innerHTML = " Your Name : ";
+var linebreak = document.createElement('br');
+createform.appendChild(linebreak);
+
+var namelabel = document.createElement('label'); // Create Label for Name Field
+namelabel.innerHTML = "Your Name : "; // Set Field Labels
 createform.appendChild(namelabel);
 
-var inputeelement = document.createElement('input');
+var inputelement = document.createElement('input'); // Create Input Field for Name
 inputelement.setAttribute("type", "text");
 inputelement.setAttribute("name", "dname");
 createform.appendChild(inputelement);
