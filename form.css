@@ -1,11 +1,12 @@
 @import "http://fonts.googleapis.com/css?family=Ubuntu";
-div#main{
+#main{
 width:830px;
 height:650px;
 margin:0 auto;
 font-family:'Ubuntu',sans-serif
 }
-div#form_sample{
+
+#form_sample{
 text-align:center;
 border:1px solid #ccc;
 width:300px;
@@ -18,13 +19,16 @@ float:left
 #main h1{
 margin-top:40px
 }
+
 hr{
 margin-top:-5px
 }
+
 label{
 float:left;
 font-size:16px
 }
+
 input[type="text"]{
 width:100%;
 margin-top:10px;
@@ -33,6 +37,7 @@ margin-bottom:25px;
 padding:10px;
 border:3px solid #2BC1F2
 }
+
 textarea{
 width:100%;
 border:3px solid #2BC1F2;
@@ -42,6 +47,7 @@ margin-top:10px;
 height:100px;
 resize:none
 }
+
 input[type="submit"]{
 width:100%;
 padding:10px 45px;
@@ -52,10 +58,4 @@ font-size:18px;
 font-weight:700;
 cursor:pointer;
 font-family:'Ubuntu',sans-serif
-}
-/* -------------------------------------
-CSS for Sidebar (optional)
----------------------------------------- */
-div#fugo{
-float:right
 }
